@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background">
+
+    <!-- Header Bar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#6B46C1"
+        android:padding="12dp">
+
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/imageViewBack"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_back"
+            app:tint="#FFFFFF"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="4dp"/>
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"/>
+
+        <!-- Settings Button -->
+        <ImageView
+            android:id="@+id/imageViewSettings"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_settings"
+            app:tint="#FFFFFF"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="4dp"/>
+    </RelativeLayout>
+
+    <!-- Profile Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Profile Picture Container -->
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Profile Picture Background -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/profile_circle_background"
+                android:padding="20dp"
+                android:src="@drawable/ic_person"
+                app:tint="#6B46C1"/>
+
+            <!-- Badge -->
+            <TextView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:text="3"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/badge_background"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"/>
+        </RelativeLayout>
+
+        <!-- Profile Name -->
+        <TextView
+            android:id="@+id/textViewProfileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile Name"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Friends and Followers -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="32dp">
+
+            <!-- Friends -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginEnd="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="125"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Friends"
+                    android:textColor="#E9D5FF"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <!-- Followers -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9999999999999"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Followers"
+                    android:textColor="#E9D5FF"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Contact Information Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/info_card_background"
+            android:padding="20dp">
+
+            <!-- Email -->
+            <TextView
+                android:id="@+id/textViewEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="email : nguyenvanthieu0108@email.com"
+                android:textColor="#6B46C1"
+                android:textSize="14sp"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Phone -->
+            <TextView
+                android:id="@+id/textViewPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone : +84 738265992"
+                android:textColor="#6B46C1"
+                android:textSize="14sp"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Skype -->
+            <TextView
+                android:id="@+id/textViewSkype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Skype : VANTHIEU0108"
+                android:textColor="#6B46C1"
+                android:textSize="14sp"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Web -->
+            <TextView
+                android:id="@+id/textViewWeb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Web : NguyemVanThieu.com/"
+                android:textColor="#6B46C1"
+                android:textSize="14sp"
+                android:padding="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
